@@ -6,6 +6,7 @@ import {
 
 
 import Home from 'routes/home'
+import ReposList from 'routes/repos-list'
 
 class MainLayout extends Component {
     render() {
@@ -13,6 +14,7 @@ class MainLayout extends Component {
             <Router>
                 <div className="main-layout container">
                     <Route exact path="/" component={Home} />
+                    <Route path="/repos-list" component={ReposList} />
                 </div>
             </Router>
         )
