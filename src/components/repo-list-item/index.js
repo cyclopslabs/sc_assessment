@@ -13,8 +13,10 @@ function RepoListItem(props) {
 }
 
 RepoListItem.propTypes = {
+    repo: PropTypes.shape({
+        full_name: PropTypes.string
+    }),
     index: PropTypes.number,
-    full_name: PropTypes.string,
     onClick: PropTypes.func
 }
 

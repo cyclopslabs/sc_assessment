@@ -33,7 +33,7 @@ class ReposList extends PureComponent {
 
   renderListItem = (repo, idx) => {
     function onClickListItem() {
-      const {name, owner: {login}  } = repo
+      const { name, owner: { login } } = repo
       history.push(`/repo/${login}/${name}`)
     }
     return (
